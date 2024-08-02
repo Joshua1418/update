@@ -148,7 +148,6 @@ body {
     text-align: center;
     padding: 1rem;
     gap: 1em;
-
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -222,7 +221,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .ContactContainer .oneMoreThing {
-    background-color: lightgrey;
+    background-color: grey;
     display: flex;
     flex-direction: column;
     justify-content:center;
