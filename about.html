@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="josue-nzanza.png" type="image/x-icon" />
+    <title>Josué Nzanza</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- loading Page -->
+    <section id="loader" class="loader">
+      <div></div>
+    </section>
+    <!-- Header Content of this Page -->
+    <header class="headerPart">
+      <div class="menuContainer">
+        <img
+          src="menu.png"
+          alt="menu_bars"
+          id="menu_bars"
+          onclick="openNav()"
+        />
+      </div>
+
+      <nav id="sideNav" class="sideNavContainer">
+        <div>
+          <img src="home.png" alt="acceuil" />
+          <a href="index.html">Accueil</a>
+        </div>
+        <div>
+          <img src="projet.png" alt="projets" />
+          <a href="projets.html">Projets</a>
+        </div>
+        <div>
+          <img src="blog.png" alt="blogs" />
+          <a href="blogs.html">Blogs</a>
+        </div>
+        <div>
+          <img src="code.png" alt="coding" />
+          <a href="code.html" >Learn to Code</a>
+        </div>
+        <div>
+          <img src="about.png" alt="a_propos" />
+          <a href="about.html">A propos</a>
+        </div>
+        <div>
+          <img src="contact.png" alt="cours" />
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content of About Page -->
+    <main>
+      <section class="AboutContainer">
+        <div class="aboutMe"></div>
+        <div class="aboutSpecially">
+          <p>
+            Je suis
+            <span
+              style="color: rgb(8, 8, 57); font-weight: bold; font-size: 1.3rem"
+              >Josué Nzanza</span
+            >, un étudiant en informatique dans le métier de développement web.
+            Basé en republique démocratique du Congo.
+          </p>
+          <p>Je développe des sites et des applications web, en me servant des technologies suivantes : </p>
+          <p style="background-color: rgb(217, 217, 186); padding:0.7rem; border-bottom:2px solid rgb(7, 7, 66);"><span style="color: brown; font-weight:bold;">Html</span>, <span style="color: blue; font-weight:bold;">Css</span> et <span style="color: rgb(159, 159, 10); font-weight:bold;">JavaScript</span> pour la création des interfaces utilisateurs</p>
+          <p style="background-color: rgb(217, 217, 186); padding:0.7rem; border-bottom:2px solid rgb(7, 7, 66);"><span style="font-weight: bold; color:rgb(41, 164, 14);">Node.js</span>, un framework JavaScript pour la programmation back end, le coté serveur</p>
+          <p style="background-color: rgb(148, 237, 243); padding:0.7rem; border-bottom:2px solid rgb(1, 1, 16);"><span style="font-weight: bold;">MySQL</span> pour la gestion de bases de données</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

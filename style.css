@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+}
+/* Loading Page */
+.loader  {
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.loader div {
+    height: 4.5em;
+    width: 4.5em;
+    border-radius: 50%;
+    border: 6px solid rgba(128, 128, 128, 0.708);
+    border-bottom-color:rgb(145, 145, 23);
+    animation: rotate 1s linear infinite;
+}
+.headerPart .menuContainer {
+    background-color: white;
+    height: 3em;
+    width: 100%;
+    top: 0;
+    position: fixed ;
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem;
+}
+.headerPart .sideNavContainer {
+    top: 0;
+    height: 100vh;
+    width: 0%;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 1px 1px 0px 1px rgba(208, 214, 122, 0.473);
+    transition: 0.09s;
+    overflow: hidden;
+    overflow-x:hidden ;
+    left: 0;
+    position: fixed;
+    border-bottom: 3px solid rgb(7, 37, 75);
+}
+.headerPart .sideNavContainer div{
+    border-color: rgb(170, 191, 216);
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: 3.5em;
+    gap: 1rem;
+    padding: 0.5rem;  
+}
+.headerPart .sideNavContainer div a {
+    color: rgb(3, 3, 30);
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+.headerPart .sideNavContainer div img {
+    background-color: rgb(217, 217, 186);
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+/* Main content of the Home page */
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    gap: 1em;
+}
+.mainContainer .homeContainerPicture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.mainContainer .homeContainerPicture img {
+    width: 60%;
+    border-radius: 50%;
+}
+.homeContainerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.homeContainerText h2 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(5, 3, 49);   
+}
+.homeContainerText .textContent {
+    width: 85%;
+    padding: 0.5rem;
+    border-style: solid;
+    border-width: 0 0 0.3rem 0.3rem ;
+    border-bottom-left-radius: 0.7rem;
+    border-bottom-color: rgb(217, 217, 186);
+    border-left-color: rgba(10, 10, 70, 0.772);
+}
+.homeContainerText .textContent p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3rem;
+}
+
+/* Main Content of the About Page */
+.AboutContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1em;
+}
+.AboutContainer .aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+   
+}
+.AboutContainer .aboutSpecially {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-width: 0 0 0.3rem 0.3rem;
+    text-align: center;
+    padding: 1rem;
+    gap: 1em;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Main Content of the contact Page */
+
+.ContactContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.ContactContainer .normalCall {
+    
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    width: 50%;
+    border-bottom: 2px solid rgb(5, 5, 54);
+    border-left: 2px solid rgb(196, 196, 207);
+    box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.32) ;
+   
+}
+
+.ContactContainer .normalCall a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(4, 4, 38);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.ContactContainer .whatsappCall {
+   
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    width: 50%;
+    border-bottom: 2px solid rgb(5, 5, 54);
+    border-left: 2px solid rgb(195, 195, 206);
+    box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.32) ;
+}
+.ContactContainer .whatsappCall a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(4, 4, 38);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.ContactContainer .gmailCall {
+  
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    width: 50%;
+    border-bottom: 2px solid rgb(5, 5, 54);
+    border-left: 2px solid rgb(196, 196, 205);
+    box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.32) ;
+ 
+}
+.ContactContainer .gmailCall a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(4, 4, 38);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.ContactContainer .oneMoreThing {
+    background-color: rgb(231, 231, 146);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 90%;
+    border-bottom: 3px solid rgb(5, 5, 56);
+}
+.ContactContainer .oneMoreThing h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.ContactContainer .oneMoreThing p {
+    padding: 0.3rem;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Main Content of the Projets Page */
+
+.projetsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 3.5em;
+    margin-bottom: 2em;
+}
+.projetsContainer .contentAboutProjet {
+    width: 90%;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.571);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  
+}
+.projetsContainer .contentAboutProjet img {
+    width: 100%;
+}
+.projetsContainer .contentAboutProjet span {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* Main Content of the Code Page */
+
+.codeContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1em;
+    margin-top: 3.5em;
+    margin-bottom: 2em;
+}
+.codeContainer .contentAboutProgramming {
+    width: 90%;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.571);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.codeContainer .contentAboutProgramming img {
+    width: 100%;
+}
+.codeContainer .contentAboutProgramming span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
